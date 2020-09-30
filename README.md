@@ -1,2 +1,2 @@
-<h2> Site projeto da disciplina Engenharia de Software III - 4 semestre </h2>
+<h2>Projeto da disciplina Engenharia de Software III</h2>
 <blockquote>Desenvolvimento de um sistema p/ eventos

@@ -2,14 +2,17 @@
 *{ border:none; outline:none; font-family: 'PT Sans', sans-serif;margin: 0px;}
 a {text-decoration:none;}
 ul{list-style: none;}
-body{background-color: rgb(0,0,0);
-    background-color: linear-gradient(163deg, rgba(0,0,0,1) 0%,  95%, rgba(69,242,242,1) 99%);}
-html {scroll-behavior: smooth;}
 
-/* HEADER */
-header{background-color: #45F2F2;height: 180px;}
-#logo-div{ width: 500px;height: 180px;padding: 15px;}
-#logo-nav{width: 280px;}
 
-/* SECTION */
-section{margin-top:350px;height: 300px;background-color: antiquewhite;}
+header{height: 500px;background: url(assets/wave.svg);background-size:cover;}
+/* NAV */
+.menu{font-size:25px;color: white; letter-spacing: 1.5px;font-weight: 600;}
+.menu:hover{font-size:25px;color: white; letter-spacing: 1.5px;font-weight: 600;}
+#edit{background-color: none;margin-top: -10px;}
+#botao{font-size:22px;color: black;letter-spacing: 1.5px;font-weight: 600;padding:7px; border: 1px solid white;width: 160px;background: #FFFFFF;
+border-radius: 73px;}
+.contato-nav{margin-left: 50px;}
+
+
+
+

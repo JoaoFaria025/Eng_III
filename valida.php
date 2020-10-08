@@ -3,13 +3,8 @@
     session_start();
     $btnLogin = filter_input(INPUT_POST, 'btnlogin', FILTER_SANITIZE_STRING);
 
-
-    if($btnLogin){//Se for clicado no botao com o name btnLogin
-        $email_usu = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);//Pega campo com name email
-
     if($btnLogin){
         $email_usu = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
-
         $senha = filter_input(INPUT_POST, 'senha', FILTER_SANITIZE_STRING); //salvando a senha do formulario na variave senha
         $result_usuario = "SELECT id, nome, email, senha FROM usuarios WHERE email ='$email_usu' 
         LIMIT 1";
@@ -24,9 +19,6 @@
             }
             else{//Senão, siginifca que a senha está incorreta !!
                 echo ''.$senha.'-'.$row_usuario['senha'].'';
-
-                $_SESSION['msg'] = "erro_senha";
-                header("Location: index.php");
                 $_SESSION['msg'] = "Login e senha incorreta!";
                 header("Location: login.php");
                 
@@ -35,13 +27,8 @@
     }
     else{
         $_SESSION['msg'] = "Página não encontrada"; //vai armazenar esse valor na sessao msg.
-
-        header("Location:index.php");
-    }
-
         header("Location:login.php");
     }
-
 
 
 

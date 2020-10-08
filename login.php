@@ -1,7 +1,6 @@
 <?php
 session_start();
 ob_start(); //limpar a memória para nao dar erro de redirecionamento.
-$btnCadUsuario = filter_input(INPUT_POST, 'btnCadUsuario', FILTER_SANITIZE_STRING);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -25,7 +24,7 @@ $btnCadUsuario = filter_input(INPUT_POST, 'btnCadUsuario', FILTER_SANITIZE_STRIN
 			unset($_SESSION['msg']);
 		}
 ?>
-	<form method="POST" action="valida.php">
+	<form method="POST" action="#">
 		<label>Email</label>
 		<input type="text" name="email" placeholder="Digite o seu e-mail" required><br><br>
 		<label>Senha</label>

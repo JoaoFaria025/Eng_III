@@ -19,7 +19,7 @@
             }
             else{//Senão, siginifca que a senha está incorreta !!
                 echo ''.$senha.'-'.$row_usuario['senha'].'';
-                $_SESSION['msg'] = "<div class='alert alert-danger col-md-6' style='float:right'>Login ou senha incorreta!</div>";
+                $_SESSION['msg'] = "erro_senha";
                 header("Location: index.php");
                 
             }
